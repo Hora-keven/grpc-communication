@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package myservice;
+
+service MyService {
+  rpc GetPerson (PersonRequest) returns (PersonResponse) {}
+}
+
+message PersonRequest {
+  int32 id = 1;
+}
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+  bool haveCar = 3;
+}
+
+
+message PersonResponse {
+  Person person = 1;
+}
