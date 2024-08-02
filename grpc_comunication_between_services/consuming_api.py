@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify, abort
-from flask_limiter import Limiter
 import requests
 import grpc
 import service_pb2
