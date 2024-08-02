@@ -14,6 +14,6 @@ from protobuff</p>
 
 <h2>Server and client</h2>
 <p>The server implements the services defined on .proto file.
-The client callsremote services methods as if they were local.</p>
+The client calls remote services methods as if they were local.</p>
 
 
