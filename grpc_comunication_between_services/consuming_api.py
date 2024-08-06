@@ -29,9 +29,9 @@ def service(path, page):
         data=request.get_data(),
         cookies=request.cookies,
         allow_redirects=False)
-    e = run()
+    server_message = run()
  
-    return (e, response.status_code, response.headers.items())
+    return (server_message, response.status_code, response.headers.items())
 
 if __name__ == "__main__":
     app.run("127.0.0.1",port=8080,debug=True)
