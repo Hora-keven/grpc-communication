@@ -6,7 +6,7 @@ import service_pb2_grpc
 
 class MyServiceServicer(service_pb2_grpc.MyServiceServicer):
     def GetPerson(self, request, context):
-        person = service_pb2.Person(name="John Doe",age=12, haveCar=13)
+        person = service_pb2.Person(name="Person 1",age=12, haveCar=13)
         return service_pb2.PersonResponse(person=person)
         
 
