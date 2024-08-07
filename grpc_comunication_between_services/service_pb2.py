@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rservice.proto\x12\tmyservice\"\x1b\n\rPersonRequest\x12\n\n\x02id\x18\x01 \x01(\x05\"4\n\x06Person\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03\x61ge\x18\x02 \x01(\x05\x12\x0f\n\x07haveCar\x18\x03 \x01(\x08\"3\n\x0ePersonResponse\x12!\n\x06person\x18\x01 \x01(\x0b\x32\x11.myservice.Person2O\n\tMyService\x12\x42\n\tGetPerson\x12\x18.myservice.PersonRequest\x1a\x19.myservice.PersonResponse\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rservice.proto\x12\tmyservice\"\x1b\n\rPersonRequest\x12\n\n\x02id\x18\x01 \x01(\t\"5\n\x06Person\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03\x61ge\x18\x02 \x01(\x05\x12\x10\n\x08have_car\x18\x03 \x01(\x08\"3\n\x0ePersonResponse\x12!\n\x06person\x18\x01 \x01(\x0b\x32\x11.myservice.Person2O\n\tMyService\x12\x42\n\tGetPerson\x12\x18.myservice.PersonRequest\x1a\x19.myservice.PersonResponse\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -24,9 +24,9 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_PERSONREQUEST']._serialized_start=28
   _globals['_PERSONREQUEST']._serialized_end=55
   _globals['_PERSON']._serialized_start=57
-  _globals['_PERSON']._serialized_end=109
-  _globals['_PERSONRESPONSE']._serialized_start=111
-  _globals['_PERSONRESPONSE']._serialized_end=162
-  _globals['_MYSERVICE']._serialized_start=164
-  _globals['_MYSERVICE']._serialized_end=243
+  _globals['_PERSON']._serialized_end=110
+  _globals['_PERSONRESPONSE']._serialized_start=112
+  _globals['_PERSONRESPONSE']._serialized_end=163
+  _globals['_MYSERVICE']._serialized_start=165
+  _globals['_MYSERVICE']._serialized_end=244
 # @@protoc_insertion_point(module_scope)
