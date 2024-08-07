@@ -18,20 +18,10 @@ def run():
 app = Flask(__name__)
 SERIVCE_URL = '10.234.149.119:8000/api/v1'
 
-@app.route('/service/<path:path>/<int:page>', methods=['GET', 'POST', 'PUT', 'DELETE'])
-def service(path, page):
-   
-    url = f'http://{SERIVCE_URL}/{path}?format=json&limit={page}&offset=10'
-    response = requests.request(
-        method=request.method,
-        url=url,
-        headers=request.headers,
-        data=request.get_data(),
-        cookies=request.cookies,
-        allow_redirects=False)
+@app.route('/grpc_server_message', methods=['GET'])
+def service():
     server_message = run()
- 
-    return (server_message, response.status_code, response.headers.items())
+    return (server_message, 200)
 
 if __name__ == "__main__":
     app.run("127.0.0.1",port=8080,debug=True)
