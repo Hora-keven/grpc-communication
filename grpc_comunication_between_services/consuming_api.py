@@ -17,7 +17,7 @@ def run(search:str):
 
 app = Flask(__name__)
 
-@app.route('/grpc_server_message/<string:search>', methods=['GET', "PUT","DELETE", "POST"])
+@app.route('/grpc_server_message/<string:search>', methods=['GET'])
 def get_server_message(search:str):
     try:
         server_message = run(search)
