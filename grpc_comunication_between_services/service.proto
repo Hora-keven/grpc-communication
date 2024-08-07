@@ -7,7 +7,7 @@ service MyService {
 }
 
 message PersonRequest {
-  string id = 1;
+  string search = 1;
 }
 
 message Person {
