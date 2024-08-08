@@ -3,5 +3,11 @@ version: '3.4'
 services:
   api:
     ports:
-      - '8080:8080'
-    image: grpc_server_message
+      - '8081:8081'
+    image: grpc_server_message:latest
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
