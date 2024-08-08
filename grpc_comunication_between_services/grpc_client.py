@@ -2,8 +2,8 @@
 from concurrent import futures
 
 import grpc
-from _grpc import service_pb2
-from _grpc import service_pb2_grpc
+from . import service_pb2
+from . import service_pb2_grpc
 
 def run():
     with grpc.insecure_channel('localhost:90090') as channel:
