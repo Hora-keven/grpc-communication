@@ -25,4 +25,5 @@ message PersonResponse {
   Person person_send = 1;
   float value = 2;
   Person person_receive = 3;
+  string message = 4;
 }
