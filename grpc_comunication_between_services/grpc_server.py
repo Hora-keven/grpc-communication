@@ -8,7 +8,6 @@ from api import Api
     
 class MyServiceServicer(service_pb2_grpc.MyServiceServicer):
     def GetPerson(self, request, context):
-        print(request)
         api = Api()
         person_choose = api.transaction(request.who_send,request.who_receive,request.value)
       
