@@ -1,2 +1,18 @@
 # The line below teaches how to convert proto to py
 -------- py -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. service.proto
+
+# The line below teaches how to build docker image without proxy
+docker build -t <TARGET> --build-arg http_proxy=http://<IP:PORT> --build-arg https_proxy=http://<IP:PORT> --network=host 
+
+# docker commands
+docker-compose up
+docker build -t <image_name> .
+docker ps - visualize all containers running
+docker run <image_name>
+docker-compose down
+
+# ubuntu commands
+sudo service cn*** status | start
+sudo service docker start | start
+
+
